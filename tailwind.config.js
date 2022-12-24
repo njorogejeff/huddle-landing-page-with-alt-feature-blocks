@@ -1,8 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/*.html"],
+  content: ["./*.html"],
   theme: {
-    extend: {},
+    fontSize: {
+      base: '1.125rem'
+    },
+    fontFamily: {
+      openSans: ['Open Sans', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif']
+    },
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px'
+    },
+    extend: {
+      colors: {
+        pink: 'hsl(322, 100%, 66%)',
+        veryPaleCyan: 'hsl(193, 100%, 96%)',
+        veryDarkCyan: 'hsl(192, 100%, 9%)',
+        grayishBlue: 'hsl(208, 11%, 55%)',
+      }
+    },
   },
   plugins: [],
 }
