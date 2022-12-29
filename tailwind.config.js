@@ -2,9 +2,6 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    fontSize: {
-      base: '1.125rem'
-    },
     fontFamily: {
       openSans: ['Open Sans', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif']
@@ -16,6 +13,9 @@ module.exports = {
       xl: '1440px'
     },
     extend: {
+      fontSize: {
+        body: '1.125rem'
+      },
       colors: {
         pink: 'hsl(322, 100%, 66%)',
         veryPaleCyan: 'hsl(193, 100%, 96%)',
