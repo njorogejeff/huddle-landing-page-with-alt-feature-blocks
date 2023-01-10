@@ -21,7 +21,7 @@ module.exports = {
         veryPaleCyan: 'hsl(193, 100%, 96%)',
         veryDarkCyan: 'hsl(192, 100%, 9%)',
         grayishBlue: 'hsl(208, 11%, 55%)',
-      }
+      },
     },
   },
   plugins: [],
