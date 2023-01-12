@@ -4,6 +4,9 @@
 
 
 @layer base {
+    * {
+        /* outline: 1px solid red; */
+    }
     html {
         font-family: 'Open Sans', sans-serif;
         /* font-family: 'Poppins', sans-serif; */
