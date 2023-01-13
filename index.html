@@ -8,6 +8,7 @@
 	<link rel="icon" href="./images/logo.svg" type="image/png" sizes="32x32">
 	<link rel="stylesheet" href="./dist/main.css">
 	<title>Huddle Landing Page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<header id="header" class="min-h-screen bg-veryPaleCyan py-10 px-6 lg:px-24 lg:py-14 bg-[url('../images/bg-hero-mobile.svg')] bg-left-top bg-no-repeat bg-cover md:bg-[url('../images/bg-hero-desktop.svg')]">
@@ -17,10 +18,10 @@
 		</navbar>
 		<div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-none gap-16 md:gap-0 md:items-center">
 			<div class="w-full md:w-4/5">
-				<h1 class="text-veryDarkCyan text-2xl text-center font-semibold mb-7 lg:text-5xl md:text-left md:leading-normal">
+				<h1 class="font-poppins text-veryDarkCyan text-2xl text-center font-semibold mb-7 lg:text-5xl md:text-left md:leading-normal">
 					Build The Community<br> Your Fans Will Love
 				</h1>
-				<p class="text-base text-center font-medium mb-10 md:text-left lg:text-lg">
+				<p class="text-base text-center font-medium leading-normal mb-10 md:text-left lg:text-lg">
 					Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
 				</p>
 				<button class="block mx-auto bg-pink rounded-full py-3 px-12 text-base font-semibold text-white md:ml-0 lg:py-4 lg:px-16 hover:bg-opacity-75">Get Started For Free</button>
@@ -37,7 +38,7 @@
 			<!-- Grow Together Card -->
 			<div class="bg-white flex flex-col-reverse gap-10 shadow-lg rounded-2xl pt-12 px-10 pb-8 md:flex-row md:items-center md:gap-24 lg:pl-32 lg:pb-12 lg:shadow-md">
 				<div class="text-center md:text-left md:basis-7/12">
-					<h2 class="text-veryDarkCyan text-2xl font-bold mb-5 lg:text-3xl">
+					<h2 class="font-poppins text-veryDarkCyan text-2xl font-bold mb-5 lg:text-3xl">
 						Grow Together
 					</h2>
 					<p class="text-sm text-grayishBlue leading-normal lg:text-body lg:w-3/4">
@@ -54,7 +55,7 @@
 					<img src="./images/illustration-flowing-conversation.svg" alt="">
 				</div>
 				<div class="text-center md:text-left md:basis-5/12">
-					<h2 class="text-veryDarkCyan text-2xl font-bold mb-5 lg:text-3xl">
+					<h2 class="font-poppins text-veryDarkCyan text-2xl font-bold mb-5 lg:text-3xl">
 						Flowing Conversations
 					</h2>
 					<p class="text-sm text-grayishBlue leading-normal lg:text-body">
@@ -65,7 +66,7 @@
 			<!-- Your Users Card -->
 			<div class="bg-white flex flex-col-reverse gap-10 shadow-lg rounded-2xl pt-12 px-10 pb-8 md:flex-row md:items-center md:gap-24 lg:pl-32 lg:pb-12 lg:shadow-md">
 				<div class="text-center md:text-left md:basis-7/12">
-					<h2 class="text-veryDarkCyan text-2xl font-bold mb-5 lg:text-3xl">
+					<h2 class="font-poppins text-veryDarkCyan text-2xl font-bold mb-5 lg:text-3xl">
 						Your Users
 					</h2>
 					<p class="text-sm text-grayishBlue leading-normal lg:text-body lg:w-3/4">
@@ -79,7 +80,7 @@
 
 			<!-- CTA card component -->
 			<div class="bg-white text-center shadow-lg rounded-2xl py-14 px-10 lg:shadow-md lg:w-3/5 lg:mx-auto lg:pt-20">
-				<h2 class="text-veryDarkCyan text-2xl font-bold mb-10 lg:text-3xl">
+				<h2 class="font-poppins text-veryDarkCyan text-2xl font-bold mb-10 lg:text-3xl">
 					Ready To Build Your Community?
 				</h2>
 				<button class="block mx-auto bg-pink rounded-full py-3 px-9 text-base font-semibold text-white drop-shadow-xl lg:py-6 lg:px-24 lg:text-body hover:bg-opacity-75">Get Started For Free</button>
@@ -88,9 +89,92 @@
 	</main>
 
 	<!-- Footer Section -->
-	<footer id="footer" class="px-6 py-20 bg-veryDarkCyan lg:px-24">
+	<footer id="footer" class="px-6 pt-20 pb-16 bg-veryDarkCyan lg:px-24">
 		<div>
 			<img src="./images/footer-logo.svg" alt="">
+		</div>
+		<div class="flex flex-col gap-10">
+			<!-- Contact Details -->
+			<div class="flex flex-col gap-6 text-body">
+				<!-- Location -->
+				<div class="flex gap-8 text-white">
+					<div class="w-12">
+						<img src="./images/icon-location.svg" alt="" class="w-full">
+					</div>
+					<p class="leading-normal text-base">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</p>
+				</div>
+				<!-- Telephone -->
+				<div class="flex gap-5 items-center text-white">
+					<div class="basis-6">
+						<img src="./images/icon-phone.svg" alt="" class="w-full">
+					</div>
+					<p>+1-543-123-4567</p>
+				</div>
+				<!-- Email Address -->
+				<div class="flex gap-5 items-center text-white">
+					<div class="basis-6">
+						<img src="./images/icon-email.svg" alt="" class="w-full">
+					</div>
+					<p>example@fylo.com</p>
+				</div>
+			</div>
+
+			<!-- Page Links -->
+			<div class="flex flex-col text-white text-body leading-10">
+				<div>
+					<ul>
+						<li>
+							<a href="#" class="hover:underline underline-offset-2">About Us</a>
+						</li>
+						<li>
+							<a href="#" class="hover:underline underline-offset-2">What We Do</a>
+						</li>
+						<li>
+							<a href="#" class="hover:underline underline-offset-2">FAQ</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							<a href="#" class="hover:underline underline-offset-2">Career</a>
+						</li>
+						<li>
+							<a href="#" class="hover:underline underline-offset-2">Blog</a>
+						</li>
+						<li>
+							<a href="#" class="hover:underline underline-offset-2">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Social Links -->
+			<div class="flex justify-center gap-10 text-white text-2xl">
+				<!-- Facebook -->
+				<div class="border rounded-full h-12 w-12 p-3">
+					<a href="https://www.facebook.com" class="flex justify-center items-center">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</div>
+				<!-- Twitter -->
+				<div class="border rounded-full h-12 w-12 p-3">
+					<a href="https://www.twitter.com/explore" class="flex justify-center items-center">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</div>
+				<!-- Instagram -->
+				<div class="border rounded-full h-12 w-12 p-3">
+					<a href="https://www.instagram.com" class="flex justify-center items-center">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="font-poppins text-white text-center">
+			<p>&copy; Copyright 2018 Huddle. All rights reserved</p>
 		</div>
 	</footer>
 </body>
