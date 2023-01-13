@@ -11,20 +11,22 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<header id="header" class="min-h-screen bg-veryPaleCyan py-10 px-6 lg:px-24 lg:py-14 bg-[url('../images/bg-hero-mobile.svg')] bg-left-top bg-no-repeat bg-cover md:bg-[url('../images/bg-hero-desktop.svg')]">
+	<header id="header" class="min-h-screen portrait:md:min-h-min bg-veryPaleCyan py-10 px-6 lg:px-24 lg:py-14 bg-[url('../images/bg-hero-mobile.svg')] bg-left-top bg-no-repeat bg-cover md:bg-[url('../images/bg-hero-desktop.svg')]">
 		<navbar class="flex justify-between items-center mb-24">
 			<img src="./images/logo.svg" alt="Huddle Logo" class="h-6 lg:h-9">
 			<button class="bg-white font-bold text-sm py-2 px-6 rounded-full drop-shadow-md lg:text-[15px] lg:px-16 lg:py-3 lg:drop-shadow-lg hover:cursor-pointer hover:text-grayishBlue hover:bg-opacity-95">Try It Free</button>
 		</navbar>
 		<div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-none gap-16 md:gap-0 md:items-center">
 			<div class="w-full md:w-4/5">
-				<h1 class="font-poppins text-veryDarkCyan text-2xl text-center font-semibold mb-7 lg:text-5xl md:text-left md:leading-normal">
+				<h1 class="font-poppins text-veryDarkCyan text-2xl text-center font-semibold mb-7 lg:text-5xl md:text-left md:leading-normal 3xl:leading-normal">
 					Build The Community<br> Your Fans Will Love
 				</h1>
 				<p class="text-base text-center font-medium leading-normal mb-10 md:text-left lg:text-lg">
 					Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
 				</p>
-				<button class="block mx-auto bg-pink rounded-full py-3 px-12 text-base font-semibold text-white md:ml-0 lg:py-4 lg:px-16 hover:bg-opacity-75">Get Started For Free</button>
+				<button class="block mx-auto bg-pink rounded-full py-3 px-12 text-base font-semibold text-white md:ml-0 lg:py-4 lg:px-16 hover:bg-opacity-70">
+					Get Started For Free
+				</button>
 			</div>
 			<div class="w-full">
 				<img src="./images/illustration-mockups.svg" alt="">
@@ -83,22 +85,25 @@
 				<h2 class="font-poppins text-veryDarkCyan text-2xl font-bold mb-10 lg:text-3xl">
 					Ready To Build Your Community?
 				</h2>
-				<button class="block mx-auto bg-pink rounded-full py-3 px-9 text-base font-semibold text-white drop-shadow-xl lg:py-6 lg:px-24 lg:text-body hover:bg-opacity-75">Get Started For Free</button>
+				<button class="block mx-auto bg-pink rounded-full py-3 px-9 text-base font-semibold text-white drop-shadow-xl lg:py-6 lg:px-24 lg:text-body hover:bg-opacity-70">
+					Get Started For Free
+				</button>
 			</div>
 		</div>
 	</main>
 
 	<!-- Footer Section -->
 	<footer id="footer" class="px-6 pt-20 pb-16 bg-veryDarkCyan lg:px-24">
-		<div>
+		<!-- Footer logo -->
+		<div class="mb-10">
 			<img src="./images/footer-logo.svg" alt="">
 		</div>
-		<div class="flex flex-col gap-10">
+		<div class="flex flex-col gap-10 mb-10 md:flex-row md:flex-wrap md:gap-x-24 lg:gap-x-32">
 			<!-- Contact Details -->
-			<div class="flex flex-col gap-6 text-body">
+			<div class="flex flex-col gap-6 text-body md:basis-1/3 md:grow lg:basis-1/4">
 				<!-- Location -->
 				<div class="flex gap-8 text-white">
-					<div class="w-12">
+					<div class="w-12 pt-1">
 						<img src="./images/icon-location.svg" alt="" class="w-full">
 					</div>
 					<p class="leading-normal text-base">
@@ -110,19 +115,23 @@
 					<div class="basis-6">
 						<img src="./images/icon-phone.svg" alt="" class="w-full">
 					</div>
-					<p>+1-543-123-4567</p>
+					<div>
+						<a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+					</div>
 				</div>
 				<!-- Email Address -->
 				<div class="flex gap-5 items-center text-white">
 					<div class="basis-6">
 						<img src="./images/icon-email.svg" alt="" class="w-full">
 					</div>
-					<p>example@fylo.com</p>
+					<div>
+						<a href="mailto:example@fylo.com">example@fylo.com</a>
+					</div>
 				</div>
 			</div>
 
 			<!-- Page Links -->
-			<div class="flex flex-col text-white text-body leading-10">
+			<div class="flex flex-col text-white text-body leading-10 md:basis-1/3 md:grow lg:basis-1/4 md:flex-row md:gap-20 3xl:gap-24">
 				<div>
 					<ul>
 						<li>
@@ -152,27 +161,28 @@
 			</div>
 
 			<!-- Social Links -->
-			<div class="flex justify-center gap-10 text-white text-2xl">
+			<div class="flex justify-center gap-5 text-white text-2xl md:basis-full md:grow-0 2xl:basis-1/4 2xl:grow 2xl:justify-start lg:text-xl">
 				<!-- Facebook -->
-				<div class="border rounded-full h-12 w-12 p-3">
+				<div class="border rounded-full h-12 w-12 p-3 hover:cursor-pointer hover:text-pink hover:border-pink lg:h-10 lg:w-10 lg:p-2.5">
 					<a href="https://www.facebook.com" class="flex justify-center items-center">
 						<i class="fa-brands fa-facebook-f"></i>
 					</a>
 				</div>
 				<!-- Twitter -->
-				<div class="border rounded-full h-12 w-12 p-3">
+				<div class="border rounded-full h-12 w-12 p-3 hover:cursor-pointer hover:text-pink hover:border-pink lg:h-10 lg:w-10 lg:p-2.5">
 					<a href="https://www.twitter.com/explore" class="flex justify-center items-center">
 						<i class="fa-brands fa-twitter"></i>
 					</a>
 				</div>
 				<!-- Instagram -->
-				<div class="border rounded-full h-12 w-12 p-3">
+				<div class="border rounded-full h-12 w-12 p-3 hover:cursor-pointer hover:text-pink hover:border-pink lg:h-10 lg:w-10 lg:p-2.5">
 					<a href="https://www.instagram.com" class="flex justify-center items-center">
 						<i class="fa-brands fa-instagram"></i>
 					</a>
 				</div>
 			</div>
 		</div>
+		<!-- Copyright Info -->
 		<div class="font-poppins text-white text-center">
 			<p>&copy; Copyright 2018 Huddle. All rights reserved</p>
 		</div>
