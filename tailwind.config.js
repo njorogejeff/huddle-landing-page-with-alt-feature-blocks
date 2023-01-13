@@ -6,12 +6,6 @@ module.exports = {
       openSans: ['Open Sans', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif']
     },
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
-    },
     extend: {
       fontSize: {
         body: '1.125rem'
@@ -21,6 +15,15 @@ module.exports = {
         veryPaleCyan: 'hsl(193, 100%, 96%)',
         veryDarkCyan: 'hsl(192, 100%, 9%)',
         grayishBlue: 'hsl(208, 11%, 55%)',
+      },
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1024px',
+        '2xl': '1280px',
+        '3xl': '1440px',
+        '4xl': '1536px',
       },
     },
   },
