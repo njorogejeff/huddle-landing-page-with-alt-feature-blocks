@@ -10,7 +10,7 @@
 	<title>Huddle Landing Page</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bg-neutral-50">
 	<header id="header" class="min-h-screen portrait:md:min-h-min bg-veryPaleCyan py-10 px-6 lg:px-24 lg:py-14 bg-[url('../images/bg-hero-mobile.svg')] bg-left-top bg-no-repeat bg-cover md:bg-[url('../images/bg-hero-desktop.svg')]">
 		<navbar class="flex justify-between items-center mb-24">
 			<img src="./images/logo.svg" alt="Huddle Logo" class="h-6 lg:h-9">
@@ -35,8 +35,8 @@
 	</header>
 
 	<!-- Body Section -->
-	<main id="main" class="px-6 py-20 bg-neutral-50 lg:px-24">
-		<div class="flex flex-col gap-6 lg:gap-10">
+	<main id="main" class="px-6 py-20 lg:px-24 relative">
+		<div class="flex flex-col gap-10">
 			<!-- Grow Together Card -->
 			<div class="bg-white flex flex-col-reverse gap-10 shadow-lg rounded-2xl pt-12 px-10 pb-8 md:flex-row md:items-center md:gap-24 lg:pl-32 lg:pb-12 lg:shadow-md">
 				<div class="text-center md:text-left md:basis-7/12">
@@ -81,7 +81,7 @@
 			</div>
 
 			<!-- CTA card component -->
-			<div class="bg-white text-center shadow-lg rounded-2xl py-14 px-10 lg:shadow-md lg:w-3/5 lg:mx-auto lg:pt-20">
+			<div class="bg-white text-center shadow-lg rounded-2xl py-14 px-10 lg:shadow-md lg:w-3/5 lg:mx-auto lg:pt-20 absolute -bottom-80 left-6 right-6 z-10">
 				<h2 class="font-poppins text-veryDarkCyan text-2xl font-bold mb-10 lg:text-3xl">
 					Ready To Build Your Community?
 				</h2>
@@ -93,7 +93,7 @@
 	</main>
 
 	<!-- Footer Section -->
-	<footer id="footer" class="px-6 pt-20 pb-16 bg-veryDarkCyan lg:px-24">
+	<footer id="footer" class="px-6 pb-16 bg-veryDarkCyan lg:px-24 relative top-48 pt-56">
 		<!-- Footer logo -->
 		<div class="mb-10">
 			<img src="./images/footer-logo.svg" alt="">
